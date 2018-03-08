@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+
+	     <title>Iphone 6s</title>
+		  
+
+	     <meta charset="UTF-8" />
+
+		 <!--favicon image -->
+
+		 <link rel="shortcut icon" href="images/favicon1.png" type="image/png"/>
+		 <link href = "css/style.css" rel ="stylesheet"/>
+
+
+	 </head>
+	 
+	 <body>
+	  <div id= "wrapper">
+	   <header>
+	    <!--
+	    <script  type="text/javascript" src="SlideShow.js"></script>
+	      -->
+		  <!--Top navigation bar -->
+		  <div id = "navdiv">
+		  <!--	
+		  
+			    <ul>
+				    <li><a href="#">Help</a></li>
+					<li><a href="#">Log In</a></li>
+					<li><a href="#">Sign On</a></li>
+					<li><a href="index.html">Home</a></li>
+			    </ul>
+			-->   			   
+		   </div>
+		   <div id = "navdiv-lower">
+		   	    <ul>				    
+				    <li><a href="#">Iphone 6s</a></li>
+					<li><a href="#phone-information">Phone Description</a></li>
+					<li><a href="#videoheading">Video</a></li>				
+			    </ul>			   			
+		   </div>
+		   <hr>
+		 </header>
+         		 
+		
+      
+      <div id = "phone-information">
+	    <div id = "phone-description">
+		   <ul>
+			  <li><a href="#">Phone Description</a></li>  
+           </ul>
+		<!-- https://www.apple.com/shop/buy-iphone/iphone-7/4.7-inch-display-128gb-black
+		https://www.apple.com/cn/iphone/compare/
+		-->
+		<div id = "apple">
+		  <div class="tabs">
+		    <button class="colours" onclick="openColour(event, 'Rose')">Rose Gold</button>
+            <button class="colours" onclick="openColour(event, 'Silver')">Silver</button>
+			<button class="colours" onclick="openColour(event, 'Gold')">Gold</button>
+			<button class="colours" onclick="openColour(event, 'Grey')">Space Grey</button>
+          </div>
+		 <div id="Rose" class="content">
+		 <!--https://www.apple.com/shop/buy-iphone/iphone6s#00,20-->
+			 <img src="images/iphone6s-gallery1-2015.jpg" alt="Rose Gold">
+		 </div>	
+		 <div id="Silver" class="content">
+		 <!--https://www.apple.com/shop/buy-iphone/iphone6s#00,20-->
+			 <img src="images/iphone6s-gallery2-2015.jpg" alt="Silver">
+		 </div>
+         <div id="Gold" class="content">		 
+		 <!--https://www.apple.com/shop/buy-iphone/iphone6s#00,20-->
+			 <img src="images/iphone6s-gallery3-2015.jpg" alt="Gold">
+		 </div>	
+         <div id="Grey" class="content">		 
+		 <!--https://www.apple.com/shop/buy-iphone/iphone6s#00,20-->
+			 <img src="images/iphone6s-gallery4-2015.jpg" alt="Space Grey">
+		 </div>			  
+		</div>
+
+<!--
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+-->
+		  <p>
+		  <b>
+		  Available in rose gold, gold, silver, space grey,<br>
+		  iPhone 6s features an all-new 12MP camera; <br>
+		  an A9, chip<br> 
+		  3D Touch, Touch ID,<br> 
+		  and iOS 10.
+		  </b>
+		  </p>
+		</div>
+		<div id = "videoheading">
+		   <ul>
+			  <li><a href="#">Video</a></li>  
+           </ul>
+		</div>
+		<div id = "video">
+		   <iframe width=60% height="400"
+		   src = "https://www.youtube.com/embed/mwQjHZp9I6w?control=0">
+		   </iframe>
+		</div>
+	 
+	  </div>
+	     <div id="push"></div>
+		 </div>
+           <button id="backtotop" title="Go to Top" onclick="topFunction()">Back to Top</button>		 
+		   <footer>
+		     <div id="footer-page">
+			 <!--
+		      <ul>
+				    <li><a href="#">About</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Copy Right</a></li>
+					<li><a href="#">Advertisement</a></li>
+					<li><a href="#">Policy</a></li>
+			  </ul>
+		      -->
+		    </div>
+           </footer>
+
+      </div>
+<script src="js/6scolour.js"></script>	  	     
+<script src="js/jquery.min.js"></script>
+<script src="js/backtotop.js"></script>
+<!--	same navigation bar and footer is created for all pages by samemav.js-->
+<script src="js/samenav.js"></script>
+	 </body>
+</html>
+
+

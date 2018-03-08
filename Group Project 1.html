@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+	     <title>All Mobile</title>		 
+	     <meta charset="UTF-8">
+
+		 <!--favicon image -->
+		 <!--link css, jquery and setcookies,js-->
+		 <link rel="shortcut icon" href="images/favicon1.png" type="image/png"/>		
+		  <link href = "css/style.css" rel ="stylesheet"/>
+		  <script type="text/javascript" src="js/jquery.js"></script>
+		   <script type="text/javascript" src="js/setcookies.js"></script>
+		   <script type="text/javascript" src="js/supplementary.js"></script>
+		 
+	 </head> 
+	  <body>
+      <div id="wrapper">
+	   <header>
+	
+		  <!--Top navigation bar -->
+		  <div id = "navdiv">	
+		  <!--		  
+			    <ul>
+				    <li><a href="#">Help</a></li>
+					<li><a href="#">Log In</a></li>
+					<li><a href="#">Sign On</a></li>
+					<li><a href="Group Project 1.html">Home</a></li>
+			     </ul>
+			   -->		  
+		   </div>
+		   
+		   <!--Logo-->
+		   <div id = "Logo">
+		   <img src="images/all mobile400.png" alt="All Mobile Logo"/>
+		   </div>
+		   
+		   <!--Search Bar-->
+		   <!--
+		    Dracup, J 2016, How to Build a Website #4 - Creating and Styling a 	
+			Professional Search Bar [Part 1] [CSS & JS], 
+			viewed 11 May 2017, from:
+            https://www.youtube.com/watch?v=38rJPEqapoA
+			-->
+		   <div id = "search-bar">	
+		        <p>		   
+		          <form action="php/searchResult.php" method="GET" id= "searchForm" />
+		               <input type="text" name = "result" placeholder="Search..." maxlength= "40" id="Search">
+		               <button type="submit"  id = "submit">Search</button>
+		          </form>
+		        </p>
+		   </div>	   
+	   </header>
+		   
+		   <!--Lastest Arrival Bar-->
+		   <div id = "Lastest-arrival">
+		   	    <ul>
+				    <li><a href="#">Lastest Mobile Phones</a></li>
+			    </ul>
+		  <!--SlideShow-->
+		  <!--
+		      RK Tutorial 2016, Image Slider (2/3) HTML 5 CSS 3 and JavaScript, 
+			  viewed 1 May 2017, from: 
+			  https://www.youtube.com/watch?v=lOrMfHYLhIw&t
+			-->
+           </div>
+            <div id="container">
+			<img class="photo" onclick="enterOne()" src="images/1.PNG" alt="imageOne">
+			<img class="photo" onclick="enterTwo()" src="images/2.PNG" alt="imageTwo">
+			<img class="photo" onclick="enterThree()" src="images/3.PNG" alt="imageThree">
+			<img class="photo" onclick="enterFour()" src="images/4.PNG" alt="imageFour">
+			<button class="btn" onclick= "changeIndex(-1)" id = "btn1">&#8678</button>
+			<button class="btn" onclick= "changeIndex(1)" id = "btn2">&#8680</button>
+		    </div>
+			 
+	
+		      <div id="rateheading">
+		   	    <ul>
+				    <li><a href="#">Voting</a></li>
+			    </ul>
+			  </div>	      
+           <button id="backtotop" title="Go to Top" onclick="topFunction()">Back to Top</button>
+			<br>
+			<br>
+			<br>
+	<div id="votingshow" style="margin:auto;position:relative;top:300px">
+	<form method="POST" id="selectForm">
+	<div id="pho1">
+		<img src="vote1.png" alt="phone.PNG" />
+		<h1 style="margin-left:85px;">Iphone 7</h1>
+		<input type="radio" name="phoneName" value="Iphone7">
+		</div>
+	<div id="pho2">
+		<img src="vote2.png" alt="phone.PNG" />
+	 	<h1>Iphone 6S</h1>
+	 	<input type="radio" name="phoneName" value="Iphone6S">
+	</div>
+	<div id="pho3">
+		<img src="vote3.png" alt="phone.PNG" />
+	 	<h1>Huawei Mate9</h1>
+	 		<input type="radio" name="phoneName" value="Huawei Mate9">
+	</div>
+	<div id="pho4">
+		<img src="vote4.png" alt="phone.PNG" />
+		<h1>Huawei P9</h1>
+		<input type="radio" name="phoneName" value="Huawei P9">
+	</div>
+	<div id="results">
+		<input class="vote" id="submitbutton" type="button" onclick="vote()" value="Vote"> 
+		<a href= 'https://infs3202-s3x1g.uqcloud.net/wis/php/voteresult.php'>Result</a>
+		</div>
+	</form>
+	</div>		 
+
+		   <footer>
+		     <div id="footer-page">
+			
+		    </div>
+           </footer>
+             <script src="js/samenav.js"></script>
+		   <script src="js/backtotop.js"></script>
+	 </body>
+</html>
+
+		   
+		  

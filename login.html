@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+ <html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="shortcut icon" href="images/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/login2.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src="js/registration.js"></script>
+        <script type="text/javascript" src="js/setcookies.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header><!--title-->
+                <h1>Login and Registration To <span> All Mobile</span></h1>
+            </header>
+            <section>				
+                <div id="container_demo" >
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper"><!--two forms-->
+                        <div id="login" class="animate form">
+                        <!--log in form-->
+                            <form  method="post" action="#" autocomplete="on" id="loginForm"> 
+                                <h1>Log in</h1> 
+                                <p> 
+                                <!--username-->
+                                    <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                </p>
+                                <!--password-->
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+                                <!--keep login-->
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" onchange="foo()"/> 
+									<label for="loginkeeping">Keep me logged in</label>
+								</p>
+                                <!--login button-->
+                                <p class="login button"> 
+                                    <input type="submit" id= signin value="Login" /> 
+								</p>
+                                <!--change to register-->
+                                <p class="change_link">
+									Not a member yet ?
+									<a href="#toregister" class="to_register">Join us</a>
+								</p>
+                            </form>
+                        </div>
+                        <div id="register" class="animate form">
+                        <!--register form-->
+                            <form  method="post" action="#" autocomplete="on" id="registerForm"> 
+                                <h1> Sign up </h1> 
+                                <!--user name-->
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="hahaha" />
+                                </p>
+                                <!--email-->
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="1234567@gmail.com"/> 
+                                </p>
+                                <!--password-->
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <!--confirm password-->
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <!--register button-->
+                                <p class="signin button"> 
+									<input type="submit" id="signup" value="Sign up"/> 
+								</p>
+                                <!--change to login form-->
+                                <p class="change_link">  
+									Already a member ?
+									<a href="#tologin" class="to_register"> Go and log in </a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+			
+        </div>
+        <!--log in function-->
+<script>
+    var checkbox = document.getElementById("loginkeeping");//get element
+    var user_id=document.getElementById("username").innerHTML;//get text
+    function foo(){
+        if(checkbox.checked=true){//if it is checked
+            setCookie("username",user_id,3);//set cookies
+        }
+    }
+</script>
+    </body>
+</html>
